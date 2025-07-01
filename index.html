@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<title>SmartStocks</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="navbar">
+		<div class="logo">Smart Stocks</div>
+		<nav class="nav-links">
+			<a href="#">Home</a>
+			<a href="#">Markets</a>
+			<a href="#">Watchlist</a>
+			<a href="#">Login</a>
+		</nav>
+		<button id="theme-toggle">Dark Mode</button>
+	</header>
+	<div class="dashboard">
+		<aside class="sidebar">
+			<h2>Watchlist</h2>
+			<ul>
+				<li>Tesla (TSLA)</li>
+				<li>Amazon (AMZN)</li>
+				<li>Bitcoin (BTC)</li>
+				<li>Nvidia (NVDA)</li>
+			</ul>
+		</aside>
+	<main class="main-content">
+		<section class="stock-hero">
+			<h1>Live Stock Overview</h1>
+			<p>Track your favorite stocks in real-time all in one place.</p>
+		</section>
+		<section class="stock-section">
+		<div class="search-bar">
+			<input type="text" placeholder="Search Stocks">
+			<button>Search</button>
+		</div>
+		<section class="stock-grid">
+		<div class="stock-card">
+			<h2>Apple (AAPL)</h2>
+			<p>Price:$189.34</p>
+			<p>+1.25%</p>
+		</div>
+		<div class="stock-card">
+			<h2>Google (GOOG)</h2>
+			<p>Price:$2,799.45</p>
+			<p>-0.45%</p>
+		</div>
+		<div class="stock-card">
+			<h2>Meta (META)</h2>
+			<p>Price:$145.79</p>
+			<p>-0.53%</p>
+		</div>
+	</section>
+	</section>
+	</main>
+</div>
+	<footer class="footer">
+		<p>Copyright 2025 Smart stocks.</p>
+	</footer>
+	<script>
+		const toggleBtn = document.getElementById("theme-toggle");
+		const body = document.body;
+
+		toggleBtn.addEventListener("click",()=> {
+			body.classList.toggle("ligh-tmode");
+			toggleBtn.textContent = body.classList.contains("ligh-tmode")? "Light" : "Dark"
+		});
+	</script>
+</body>
+</html>
