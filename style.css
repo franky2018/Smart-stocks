@@ -357,3 +357,54 @@ body.light-mode .nav-links a {
 body.light-mode .nav-links a:hover {
 	color: #0077cc;
 }
+
+@media (max-width: 768px) {
+	.dashboard {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 1rem;
+	}
+
+	.sidebar {
+		width: 100%;
+		background-color: inherit;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		text-align: center;
+	}
+	.sidebar h2 {
+		font-size: 1.2rem;
+		margin-bottom: 0.5rem;
+		border-bottom: 2px solid #f9c80e;
+		display: inline-block;
+		padding-bottom: 0.2rem;
+	}
+
+	.sidebar ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.sidebar li {
+		margin: 0.5rem 0;
+		font-size: 1rem;
+		color: inherit;
+	}
+
+	.stock-hero h1 {
+		text-align: center;
+	}
+
+	.search-bar {
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.search-bar input,
+	.search-bar button {
+		width: 100%;
+	}
+}
