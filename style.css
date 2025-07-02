@@ -78,13 +78,16 @@ body {
 
 .dashboard {
 	display: flex;
+	gap: 1rem;
 }
 
 .sidebar {
-	width: 250px;
-	background-color: #1e3a8a;
+	min-width: 200px;
+	max-width: 250px;
+	background-color: #222;
 	color: white;
-	padding: 20px;
+	padding: 1rem;
+	border-radius: 10px;
 	min-height: 100vh;
 }
 
@@ -167,6 +170,7 @@ body {
 		min-height: auto;
 		padding: 15px;
 		text-align: center;
+		max-width: none;
 	}
 
 	.sidebar ul {
@@ -174,6 +178,7 @@ body {
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 10px;
+
 	}
 
 	.main-content {
