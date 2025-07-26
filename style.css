@@ -356,3 +356,9 @@ body.dark-mode #theme-toggle {
 	color: #ffffff;
 	border: 1px solid #666;
 }
+
+@media (max-width: 1024px) {
+	.sidebar {
+		background-color: inherit;
+	
+}
