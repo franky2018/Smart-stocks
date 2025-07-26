@@ -10,9 +10,10 @@
 	<header class="navbar">
 		<div class="logo">Smart Stocks</div>
 		<nav class="nav-links">
-			<a href="#">Home</a>
-			<a href="#">Markets</a>
-			<a href="#">Watchlist</a>
+			<a href="index.html">Home</a>
+			<a href="markets.html">Markets</a>
+			<a href="watchlist.html">Watchlist</a>
+			<a href="portfolio.html">Portfolio</a>
 			<a href="#">Login</a>
 		</nav>
 		<button id="theme-toggle">Dark Mode</button>
@@ -58,16 +59,8 @@
 	</main>
 </div>
 	<footer class="footer">
-		<p>Copyright 2025 Smart stocks.</p>
+		<p>&copy; 2025 Smart stocks. All rights reserved</p>
 	</footer>
-	<script>
-		const toggleBtn = document.getElementById("theme-toggle");
-		const body = document.body;
-
-		toggleBtn.addEventListener("click",()=> {
-			body.classList.toggle("light-mode");
-			toggleBtn.textContent = body.classList.contains("light-tmode")? "Light" : "Dark"
-		});
-	</script>
+	<script src="script.js"></script>
 </body>
 </html>
