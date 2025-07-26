@@ -359,6 +359,16 @@ body.dark-mode #theme-toggle {
 
 @media (max-width: 1024px) {
 	.sidebar {
-		background-color: inherit;
+		max-height: 60vh;
+		overflow-y: auto;
+		background-color: #1e3a8a;
+		color: white;
+		border-radius: 10px;
+		padding: 1rem;
 	
+	}
+	.sidebar h2,
+	.sidebar li {
+		color: white !important;
+	}
 }
