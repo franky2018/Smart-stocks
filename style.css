@@ -157,6 +157,8 @@ body.dark-mode #theme-toggle:hover {
 		max-width: none;
 		margin-bottom: 1rem;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		background-color: #1e40af; /* Blue for mobile */
+		color: white;
 	}
 
 	.sidebar ul {
@@ -249,12 +251,21 @@ body.dark-mode #theme-toggle:hover {
 		padding: 1rem;
 	}
 
-	.sidebar {
+	body:not(.dark-mode) .sidebar {
 		width: 100%;
-		background-color: inherit;
+		background-color: #1e40af; /* Blue for mobile/tablet in light mode only */
 		border-radius: 10px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 		text-align: center;
+		color: white;
+	}
+	body.dark-mode .sidebar {
+		width: 100%;
+		background-color: #1e1e1e; /* Keep dark mode sidebar dark */
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		text-align: center;
+		color: #ffffff;
 	}
 	.sidebar h2 {
 		font-size: 1.2rem;
@@ -292,10 +303,10 @@ body.dark-mode #theme-toggle:hover {
 	}
 
 	#theme-toggle {
-		width: 90%;
-		margin: 1rem auto;
-		padding: 10px 20px;
-		font-size: 16px;
+		width: 60%;
+		margin: 0.5rem auto;
+		padding: 8px 12px;
+		font-size: 14px;
 		display: block;
 		text-align: center;
 	}
