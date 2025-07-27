@@ -355,4 +355,56 @@ body.dark-mode .footer {
 	color: #ffffff;
 }
 
+.watchlist-btn {
+	background-color: #0066ff;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 0.3rem 0.7rem;
+	cursor: pointer;
+	margin: 0.5rem;
+}
+
+.watchlist-btn:hover {
+	background-color: #0047b3;
+}
+
+.login-container {
+	max-width: 400px;
+	margin: 100px auto;
+	padding: 2rem;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.body.dark-mode .login-container {
+	background: #1e1e1e;
+	color: #eee;
+}
+
+.login-container input {
+	width: 100%;
+	padding: 0.75rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+
+.login-container button {
+	width: 100%;
+	padding: 0.75rem;
+	background: #007bff;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.error-message {
+	color: red;
+	margin-top: 10px;
+}
+/* Removed empty .login-container input ruleset */
 /*# sourceMappingURL=style.css.map */

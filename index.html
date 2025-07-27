@@ -14,19 +14,14 @@
 			<a href="markets.html">Markets</a>
 			<a href="watchlist.html">Watchlist</a>
 			<a href="portfolio.html">Portfolio</a>
-			<a href="#">Login</a>
+			<a href="login.html" id="login-link">Login</a>
 		</nav>
 		<button id="theme-toggle">Dark Mode</button>
 	</header>
 	<div class="dashboard">
 		<aside class="sidebar">
 			<h2>Watchlist</h2>
-			<ul>
-				<li>Tesla (TSLA)</li>
-				<li>Amazon (AMZN)</li>
-				<li>Bitcoin (BTC)</li>
-				<li>Nvidia (NVDA)</li>
-			</ul>
+			<ul id="watchlist-sidebar"></ul>
 		</aside>
 		<main class="main-content">
 			<section class="stock-hero">
@@ -35,8 +30,7 @@
 			</section>
 			<section class="stock-section">
 				<div class="search-bar">
-					<input type="text" placeholder="Search Stocks">
-					<button>Search</button>
+					<input type="text" id="searchInput" placeholder="Search Stocks..." />
 				</div>
 				<div class="stock-grid">
 					<!-- Stock cards will be injected here by script.js -->
